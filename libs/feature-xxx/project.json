@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/feature-xxx",
+  "sourceRoot": "libs/feature-xxx/src",
+  "prefix": "smec",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/feature-xxx/src/test.ts",
+        "tsConfig": "libs/feature-xxx/tsconfig.spec.json",
+        "karmaConfig": "libs/feature-xxx/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature-xxx/src/**/*.ts",
+          "libs/feature-xxx/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "feature-xxx": "libs/feature-xxx",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"
   }
